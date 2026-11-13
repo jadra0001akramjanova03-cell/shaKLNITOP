@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyingi shakl qaysi?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">K<br>+</div>
+    <div class="brand">
+      <h1>KEYINGI SHAKL QAYSI?</h1>
+      <p>Qonuniyatni top va mantiqingni sinab ko‘r!</p>
+    </div>
+    <div class="level-badge" id="bosqichBadge">1-bosqich</div>
+  </header>
+
+  <main class="container">
+
+    <section class="stats">
+      <div class="stat-card">
+        <div class="stat-icon">★</div>
+        <div>
+          <small>Ball</small>
+          <strong id="ball">0</strong>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">✓</div>
+        <div>
+          <small>To‘g‘ri javob</small>
+          <strong id="togriJavob">0</strong>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">▣</div>
+        <div>
+          <small>Topshiriq</small>
+          <strong id="topshiriq">1 / 5</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress-card">
+      <div class="progress-info">
+        <span>Bosqich jarayoni</span>
+        <strong id="foiz">0%</strong>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress"></div>
+      </div>
+    </section>
+
+    <section class="question-card">
+      <div class="question-top">
+        <div>
+          <span class="eyebrow">MANTIQIY TOPSHIRIQ</span>
+          <h2>Keyingi elementni toping</h2>
+        </div>
+        <div class="question-number" id="savolRaqam">01</div>
+      </div>
+
+      <p class="question-description">
+        Ketma-ketlikni diqqat bilan kuzating. Keyingi element qaysi?
+      </p>
+
+      <div class="sequence" id="ketmaKetlik"></div>
+
+      <h3 class="answer-title">To‘g‘ri javobni tanlang:</h3>
+
+      <div class="answers" id="variantlar"></div>
+
+      <div class="message" id="xabar"></div>
+
+      <div class="question-actions">
+        <button class="help-button" id="yordam">? Yordam</button>
+        <button class="next-button" id="keyingi" disabled>Keyingi →</button>
+      </div>
+    </section>
+
+    <section class="stages-card">
+      <div class="stages-heading">
+        <h2>Bosqichlar</h2>
+        <span>Jami 30 ta</span>
+      </div>
+      <div class="stages-list" id="bosqichlar"></div>
+    </section>
+
+    <footer>
+      <p>Loyiha muallifi: <strong>AKRAMJONOVA JADRA MARATOVNA</strong></p>
+      <span>Mantiqni charxla • Qonuniyatni top • G‘alaba qozon</span>
+    </footer>
+
+  </main>
+
+  <div class="modal" id="yakunModal">
+    <div class="modal-content">
+      <div class="trophy">★</div>
+      <h2>Tabriklaymiz!</h2>
+      <p>30 ta bosqichni muvaffaqiyatli yakunladingiz!</p>
+      <div class="final-score" id="yakunBall">0 ball</div>
+      <button id="qaytaBoshlash">Qayta boshlash</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
